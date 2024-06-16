@@ -1,0 +1,35 @@
+OOP
+- Need a class for a game
+    - Functions and variables for a game can be different per subclass of a game, but they all need the same functions
+    - Short list of what I'm thinking before making a UI:
+        - Game Name (Guess Capitals, Guess Countries, etc.)
+        - What you're given
+        - What you're guessing
+    - Probably won't need much more than that unless you get a bit more complicated
+    - Some more complicated ideas I think I may want to implement:
+        - Making a map UI to guess where a country is on a map by clicking
+        - Making a map UI that highlights a country once it's guessed
+        - Guessing a list of things (ex. all countries in the world, the top three cities in a given country)
+
+- Need a class for a country
+    - This is just to make it easier to build a framework where all countries have the same info
+    - Then when a game is played, you can write the code for country.getCapital() without knowing what country to add abstraction
+    - Some data needed for country
+        - Name
+        - Capital
+        - Continent
+        - Flag
+    - Some later data for a country
+        - Coordinates for a map UI
+        - Biggest cities (may need to make a city class with info on it if you want specifics on cities)
+        - Population
+        - GDP
+        - Biggest export
+        - National religion if it has one
+        - Style of government
+        - Landmass
+        - Landlocked, peninsula, island, archipelago, etc.
+        - Neighboring countries
+        - Neighboring bodies of water
+        - River and lakes in it
+        - Mountain ranges in it

@@ -1,0 +1,182 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ede7dd; /* Light brown background color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.countryContainer {
+    text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 57.5%; /* Adjusted to fit four buttons per row */
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.buttonContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.countryButton {
+    width: 20%; /* Width for four buttons per row with gap */
+    height: 140px; /* Height for the button */
+    font-size: 20px;
+    color: #fff;
+    background-color: #476c4a; /* Earthy green color */
+    border: none;
+    border-radius: 3px; /* Smaller border-radius for a blockier look */
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-decoration: none; /* Ensure the text is not underlined */
+    padding: 0px 15px;
+}
+
+.countryButton:hover {
+    background-color: #3a5a3e; /* Darker green color on hover */
+}
+
+a {
+    text-decoration: none;
+}
+a:visited { text-decoration: none; color: white; }
+a:hover { text-decoration: none; color: white; }
+a:focus { text-decoration: none; color: white; }
+a:hover, a:active { text-decoration: none; color: white; }
+
+.back-button {
+    position: absolute;
+    top: 25px;
+    left: 30px;
+    padding: 18px 36px; /* Increased padding for a thicker button */
+    font-size: 20px; /* Larger font size */
+    color: #fff;
+    background-color: #476c4a; /* Earthy green color */
+    border: none;
+    border-radius: 5px; /* Slightly rounded corners */
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #3a5a3e; /* Darker green color on hover */
+}
+
+.answerOptions {
+    position: absolute; /* Position absolutely */
+    width: 16%;
+    top: 65px;
+    left: 0%;
+    padding: 0px 1.25%; /* Padding for inner content */
+    padding-right: 0px;
+    box-sizing: border-box; /* Include padding in width/height */
+    text-align: center; /* Center content horizontally */
+    transition: left 0.3s; /* Smooth transition for left position */
+    /* z-index: 100; Ensure it's on top of other content */
+}
+
+.answerOptionsHeader {
+    font-size: 20px; /* Font size for header */
+    font-weight: bold; /* Bold font weight */
+    margin-bottom: 10px; /* Margin bottom for separation */
+}
+
+.answerOptionsGrid {
+    margin-bottom: 10px; /* Margin between groups of buttons */
+}
+
+.optionButton {
+    width: 100%; /* Width for a rectangular shape */
+    height: 60px; /* Height for the button */
+    margin-right: 10px; /* Margin between buttons */
+    margin-bottom: 10px; /* Margin bottom for separation */
+    font-size: 16px; /* Font size */
+    color: #fff;
+    background-color: #476c4a; /* Earthy green color */
+    border: none;
+    border-radius: 3px; /* Smaller border-radius for a blockier look */
+    transition: background-color 0.3s;
+    text-align: center;
+    /* line-height: 60px; Centering text vertically */
+    text-decoration: none; /* Ensure the text is not underlined */
+    display: inline-block; /* Display as inline-block */
+    cursor: pointer;
+}
+
+.startButton {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 60px;
+    right: 3%;
+    padding: 2.5% 60px; /* Adjust padding as needed */
+    font-size: 24px; /* Adjust font size as needed */
+    color: #fff;
+    background-color: #476c4a; /* Earthy green color */
+    border: none;
+    border-radius: 5px; /* Adjust border radius as needed */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.startButton:hover {
+    background-color: #3a5a3e; /* Darker green color on hover */
+}
+
+#answerType, #answerNumber {
+    margin-top: 75px;
+    display: none; /* Hidden by default */
+}
+
+.continentOptions {
+    position: absolute; /* Position absolutely */
+    top: 137px;
+    left: 83.75%;
+    margin-left: 0px; /* Margin to separate from buttonContainer */
+    margin-bottom: 15px;
+    padding: 0px; /* Padding for inner content */
+    padding-right: 0px;
+    box-sizing: border-box; /* Include padding in width/height */
+    text-align: center; /* Center content horizontally */
+    transition: left 0.3s; /* Smooth transition for left position */
+    z-index: 100; /* Ensure it's on top of other content */
+    width: 15%;
+    /* border: 1px solid black; */
+    display: none; /* Hidden by default */
+}
+
+.continentButton {
+    width: 48%; /* Width for a rectangular shape */
+    height: 60px; /* Height for the button */
+    margin-bottom: 10px; /* Margin bottom for separation */
+    font-size: 16px; /* Font size */
+    color: #fff;
+    background-color: #476c4a; /* Earthy green color */
+    border: none;
+    border-radius: 3px; /* Smaller border-radius for a blockier look */
+    transition: background-color 0.3s;
+    text-align: center;
+    line-height: 60px; /* Centering text vertically */
+    text-decoration: none; /* Ensure the text is not underlined */
+    display: inline-block; /* Display as inline-block */
+    cursor: pointer;
+}
+
+#all {
+    width: 98%;
+}

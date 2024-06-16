@@ -1,0 +1,84 @@
+<!-- Things a country should have
+        - Flag
+        - Capital
+        - Neighbors
+        - Location - later
+        - Biggest cities
+        - Population
+        - GDP
+        - Biggest export
+        - National religion if it has one
+        - Style of government
+        - Landmass
+        - Landlocked, peninsula, island, archipelago, etc.
+        - Neighboring bodies of water
+        - River and lakes in it
+        - Mountain ranges in it
+        - Specific Country
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <a href="../index.html" class="back-button">Back</a>
+
+     <!-- Hidden by default, shown on click of above countryButton's -->
+    <div class="answerOptions">
+        <div id="answerNumber">
+            <div class="answerOptionsHeader">Guess Number</div>
+            <div class="answerOptionsGrid">
+                <button class="optionButton" id="answerAll">All</button>
+                <button class="optionButton" id="answerTen">Ten</button>
+            </div>
+        </div>
+        <div id="answerType">
+            <div class="answerOptionsHeader">Answer Type</div>
+            <div class="answerOptionsGrid">
+                <button class="optionButton" id="chosen">Chosen</button>
+                <button class="optionButton" id="country">Country</button>
+                <button class="optionButton" id="random">Random</button>
+            </div>
+        </div>
+    </div>
+     
+    <div class="countryContainer">
+        <h1>Countries</h1>
+        <div class="buttonContainer">
+            <a class="countryButton" id="flag">Flags</a>
+            <a class="countryButton" id="capital">Capitals</a>
+            <a class="countryButton">Location</a>
+            <a class="countryButton">Neighboring Countries</a>
+            <a class="countryButton">Biggest Cities</a>
+            <a class="countryButton">Style of Government</a>
+            <a class="countryButton">National Religion</a>
+            <a class="countryButton">Specific Country Information</a>
+            <a class="countryButton">Random</a>
+        </div>
+    </div>
+
+    <!-- Hidden by default, shown on click of above countryButton's -->
+    <div class="continentOptions" id="continentOptions">
+        <div class="answerOptionsHeader">Region</div>
+        <button class="continentButton" id="all">All</button>
+        <button class="continentButton" id="North America">N. America</button>
+        <button class="continentButton" id="South America">S. America</button>
+        <button class="continentButton" id="Europe">Europe</button>
+        <button class="continentButton" id="Asia">Asia</button>
+        <button class="continentButton" id="Oceania">Oceania</button>
+        <button class="continentButton" id="Africa">Africa</button>
+    </div>
+
+    <div class="startButton" id="startButton">
+        <a onclick="startGame()">Start</a>
+    </div>
+
+    <script type="module" src="capitals.ts"></script>
+    <script type="module" src="script.ts"></script>
+</body>
+</html>
