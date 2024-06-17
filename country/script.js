@@ -117,8 +117,7 @@ answerRandom.addEventListener("click", function() {
 
 
 // Start button and game --------------------------------------------------------------------------
-function startGame() {
-    alert("Here");
-    var game = new Capital("all", "chosen", "guessAll");
-    alert("Here 2");
-}
+// function startGame() {
+//     var game = new Capital("all", "chosen", 10);
+// }
+// startButton.addEventListener("click", startGame());
